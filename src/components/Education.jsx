@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import EducationSkill from './EducationSkill';
 // import {educationStyles} from '../css/styles.jsx';
 
 function Education(props){
@@ -7,8 +8,11 @@ function Education(props){
     <div>
       <h4>{props.institution}</h4>
       <ul>
-        {props.skills.map((skill) =>
-          <li>{skill}</li>
+        {props.skills.map((skill, index) =>
+          <EducationSkill
+            skill={skill}
+            key={`edu-skill-${index}`}
+          />
         )}
       </ul>
     </div>

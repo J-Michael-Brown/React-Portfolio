@@ -6,13 +6,13 @@ import Education from './Education';
 function EducationList(){
   return (
     <div>
-        {Portfolio.educationList.map((education, index) =>
-            <Education
-              institution={education.institution}
-              skills={education.skills}
-              key={`eduList-${index}`}
-            />
-        )}
+      {Portfolio.educationList.map((education, index) =>
+        <Education
+          institution={education.institution}
+          skills={education.skillsGained}
+          key={`eduList-${index}`}
+        />
+      )}
     </div>
   );
 }
