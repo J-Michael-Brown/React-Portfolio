@@ -8,6 +8,10 @@
 
 _This is the Landing page for all projects I will show to my teachers. At some point in the future, it may also be shown to employers._
 
+## Component Structure
+
+![alt text](src/assets/component-tree.png)
+
 ## Setup/Installation Requirements
 
  _1. Open your terminal (command+spacebar on homepage for mac, to search for "terminal")_
@@ -20,7 +24,7 @@ _This is the Landing page for all projects I will show to my teachers. At some p
 
  _5. Open website in a browser (double click the "React-Portfolio" file on your desktop then double click the "index.html" file)_
 
-* _Or open the page at this url: https://j-michael-brown.github.io/Portfolio/_
+* _Or open the page at this url: https://j-michael-brown.github.io/React-Portfolio/_
 
 _Requires git to be downloaded on your devise to use instructed git terminal commands._
 
