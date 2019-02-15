@@ -3,10 +3,16 @@ import PropTypes from 'prop-types';
 // import {educationStyles} from '../css/styles.jsx';
 
 function Project(props){
+  let projectName;
+  if(props.siteLink){
+    projectName = <a href={props.siteLink}>{props.name}</a>;
+  } else {
+    projectName = props.name;
+  }
   return (
     <div>
-      <h4 href={props.siteLink}>{props.name}</h4>
-      <p>(<span href={props.githubLink}>source</span>) - {props.blurb}</p>
+      <h4>{projectName}</h4>
+      <p>(<a href={props.githubLink}>source</a>) - {props.blurb}</p>
     </div>
   );
 }
