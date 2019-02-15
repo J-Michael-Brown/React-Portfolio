@@ -17,6 +17,17 @@ const Portfolio = {
         'Developed interpersonal and communication skills through pairing and group projects'
       ]
     }
+  ],
+  ProjectList: [
+    {
+      githubLink: 'https://github.com/J-Michael-Brown/HypeTown.git',
+      name: 'HypeTown'
+    },
+    {
+      githubLink: 'https://github.com/J-Michael-Brown/word-definer-ruby.git',
+      name: 'Word Definer',
+      siteLink: 'https://whispering-ravine-99999.herokuapp.com/'
+    }
   ]
 };
 
