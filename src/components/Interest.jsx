@@ -1,19 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import InterestParagraph from './InterestParagraph';
 // import {educationStyles} from '../css/styles.jsx';
 
 function Interest(props){
   return (
     <div>
       <h4>{props.regard}</h4>
-      <p>{props.note}</p>
+      {props.notes.map((note, index) =>
+        <InterestParagraph
+          note={note}
+          key={index}
+        />
+      )}
     </div>
   );
 }
 
 Interest.propTypes = {
   regard: PropTypes.string.isRequired,
-  note: PropTypes.string.isRequired
+  notes: PropTypes.array.isRequired
 };
 
 export default Interest;

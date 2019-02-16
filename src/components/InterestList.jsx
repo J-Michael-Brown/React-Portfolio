@@ -6,11 +6,20 @@ import Interest from './Interest';
 function InterestList(){
   return (
     <div>
-      {Portfolio.interestList.map((interest, index) =>
+      <h3>Technical Interests</h3>
+      {Portfolio.technicalInterestList.map((interest, index) =>
         <Interest
           regard={interest.regard}
-          note={interest.note}
-          key={`interest-list-${index}`}
+          notes={interest.notes}
+          key={`technical-interest-list-${index}`}
+        />
+      )}
+      <h3>Personal Interests</h3>
+      {Portfolio.personalInterestList.map((interest, index) =>
+        <Interest
+          regard={interest.regard}
+          notes={interest.notes}
+          key={`personal-interest-list-${index}`}
         />
       )}
     </div>

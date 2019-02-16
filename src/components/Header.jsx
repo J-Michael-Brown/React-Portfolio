@@ -5,7 +5,7 @@ function Header(){
   return (
     <div>
       <h1>J. Michael Brown</h1>
-      <Link to="/education">Education</Link> | <Link to="/projects">Projects</Link>
+      <Link to="/education">Education</Link> | <Link to="/projects">Projects</Link> | <Link to="/interests">Interests</Link>
     </div>
   );
 }
