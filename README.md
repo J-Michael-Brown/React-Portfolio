@@ -10,7 +10,7 @@ _This is the Landing page for all projects I will show to my teachers. At some p
 
 ## Component Structure
 
-![alt text](src/assets/component-tree.png)
+![alt text](src/assets/updated-component-tree.png)
 
 ## Setup/Installation Requirements
 
