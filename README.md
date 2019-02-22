@@ -81,6 +81,8 @@ SOFTWARE.
 ## Developer Notes    
 README.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
+looking into implementing components/libraries - 'react-toolbox/io/#/'
+
 ## Component Structure
 
 ![alt text](src/assets/component-tree.png)
