@@ -12,7 +12,7 @@ function EducationList(props){
           institution={education.institution}
           skills={education.skillsGained}
           key={educationId}
-        />
+        />;
       })}
     </div>
   );
@@ -20,6 +20,6 @@ function EducationList(props){
 
 EducationList.propTypes = {
   educationList: PropTypes.object.isRequired
-}
+};
 
 export default EducationList;

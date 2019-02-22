@@ -25,8 +25,8 @@ class App extends React.Component {
           <Route exact path='/education' render={()=><EducationList educationList={this.state.portfolio.educationList}/>}/>
           <Route exact path='/projects' render={()=><ProjectList projectList={this.state.portfolio.projectList}/>}/>
           <Route exact path='/interests' render={()=><InterestList
-              technicalInterestList={this.state.portfolio.technicalInterestList}
-              personalInterestList={this.state.portfolio.personalInterestList}/>}/>
+            technicalInterestList={this.state.portfolio.technicalInterestList}
+            personalInterestList={this.state.portfolio.personalInterestList}/>}/>
         </switch>
       </div>
 
