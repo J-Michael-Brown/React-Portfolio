@@ -18,19 +18,19 @@ const Portfolio = {
       ]
     }
   },
-  projectList: {
-    hypeTown: {
+  projectList: [
+    {
       githubLink: 'https://github.com/J-Michael-Brown/HypeTown.git',
       name: 'HypeTown',
       blurb: 'A user can view a list of their already created words, add new words, view the definition(s) of those words, and add new definitions to words.'
     },
-    wordDefiner: {
+    {
       githubLink: 'https://github.com/J-Michael-Brown/word-definer-ruby.git',
       name: 'Word Definer',
       siteLink: 'https://whispering-ravine-99999.herokuapp.com/',
       blurb: 'A site to generate a playlist based off of musical performers in your area.'
     }
-  },
+  ],
   technicalInterestList: {
     catigories: {
       regard: 'Categorization',
