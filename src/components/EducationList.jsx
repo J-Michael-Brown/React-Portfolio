@@ -19,7 +19,10 @@ function EducationList(props){
 }
 
 EducationList.propTypes = {
-  educationList: PropTypes.object.isRequired
+  educationList: PropTypes.shape({
+    institution: PropTypes.string.isRequired,
+    skillsGained: PropTypes.arrayOf(PropTypes.string)
+  }).isRequired
 };
 
 export default EducationList;

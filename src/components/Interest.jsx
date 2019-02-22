@@ -19,7 +19,7 @@ function Interest(props){
 
 Interest.propTypes = {
   regard: PropTypes.string.isRequired,
-  notes: PropTypes.array.isRequired
+  notes: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Interest;

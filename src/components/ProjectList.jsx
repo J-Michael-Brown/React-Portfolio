@@ -21,7 +21,13 @@ function ProjectList(props){
 }
 
 ProjectList.propTypes = {
-  projectList: PropTypes.object.isRequired
+  // projectList: PropTypes.object.isRequired
+  projectList: PropTypes.shape({
+    githubLink: PropTypes.string.isRequired,
+    siteLink: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    blurb: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default ProjectList;

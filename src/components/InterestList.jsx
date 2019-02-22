@@ -29,8 +29,14 @@ function InterestList(props){
 }
 
 InterestList.propTypes = {
-  personalInterestList: PropTypes.object.isRequired,
-  technicalInterestList: PropTypes.object.isRequired
+  personalInterestList: PropTypes.shape({
+    regard: PropTypes.string.isRequired,
+    notes: PropTypes.arrayOf(PropTypes.string)
+  }).isRequired,
+  technicalInterestList: PropTypes.shape({
+    regard: PropTypes.string.isRequired,
+    notes: PropTypes.arrayOf(PropTypes.string)
+  }).isRequired
 };
 
 export default InterestList;
