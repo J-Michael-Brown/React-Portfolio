@@ -1,28 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Project from './Project';
-import {v4} from 'uuid';
 // import {} from '../css/styles.jsx';
 
 function ProjectList(props){
   return (
     <div>
-      {props.projectList.map((project) =>
-        <Project
+      {Object.keys(props.projectList).map(function(projectId) {
+        let project = props.projectList[projectId];
+        return <Project
           githubLink={project.githubLink}
           siteLink={project.siteLink}
           name={project.name}
           blurb={project.blurb}
-          key={v4()}
-        />
-      }
+          key={projectId}
+        />;
+      })}
     </div>
   );
 }
 
 ProjectList.propTypes = {
   // projectList: PropTypes.object.isRequired
-  projectList: PropTypes.arrayOf(PropTypes.shape({
+  projectList: PropTypes.objectOf(PropTypes.shape({
     githubLink: PropTypes.string.isRequired,
     siteLink: PropTypes.string,
     name: PropTypes.string.isRequired,
