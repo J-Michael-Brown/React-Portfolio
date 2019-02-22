@@ -81,7 +81,27 @@ SOFTWARE.
 ## Developer Notes    
 README.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
-looking into implementing components/libraries - 'react-toolbox/io/#/'
+looking into implementing components/libraries - 'react-toolbox/io/#/'...
+
+seems to not work without wrapping Link with context, a bit to much for me right now.
+
+``` js
+import React from 'react';
+import AppBar from 'react-toolbox/lib/app_bar';
+import Navigation from 'react-toolbox/lib/navigation';
+import Link from 'react-toolbox/lib/Link';
+
+//...
+return (
+  <AppBar title="J. Michael Brown" leftIcon="" rightIcon="">
+    <Navigation type="horizontal">
+      <Link href='' label="Inbox" icon="stars" />
+      <Link href='' active label="Profile" icon={"stars"} />
+    </Navigation>
+  </AppBar>
+)
+//...
+```
 
 ## Component Structure
 
