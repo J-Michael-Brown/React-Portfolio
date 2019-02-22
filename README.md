@@ -83,4 +83,4 @@ README.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
 ## Component Structure
 
-![alt text](src/assets/updated-component-tree.png)
+![alt text](src/assets/component-tree.png)
