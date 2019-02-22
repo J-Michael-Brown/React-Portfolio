@@ -11,7 +11,7 @@ function EducationList(props){
         let education = props.educationList[educationId];
         console.log(education);
         console.log(educationId);
-        <Education
+        return <Education
           institution={education.institution}
           skills={education.skillsGained}
           key={`edu-${educationId}`}
