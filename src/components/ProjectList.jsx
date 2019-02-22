@@ -1,22 +1,27 @@
 import React from 'react';
-import Portfolio from '../assets/portfolio.js';
+import PropTypes from 'prop-types';
 import Project from './Project';
 // import {} from '../css/styles.jsx';
 
-function ProjectList(){
+function ProjectList(props){
   return (
     <div>
-      {Portfolio.projectList.map((project, index) =>
-        <Project
+      {Object.keys(props.projectList).map(function(projectId) {
+        let project = props.projectList[projectId];
+        return <Project
           githubLink={project.githubLink}
           siteLink={project.siteLink}
           name={project.name}
           blurb={project.blurb}
-          key={`project-list-${index}`}
-        />
-      )}
+          key={projectId}
+        />;
+      })}
     </div>
   );
 }
+
+ProjectList.propTypes = {
+  projectList: PropTypes.object.isRequired
+};
 
 export default ProjectList;
