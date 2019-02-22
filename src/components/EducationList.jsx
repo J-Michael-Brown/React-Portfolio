@@ -1,20 +1,28 @@
 import React from 'react';
-import Portfolio from '../assets/portfolio.js';
 import Education from './Education';
+import PropTypes from 'prop-types';
 // import {} from '../css/styles.jsx';
 
-function EducationList(){
+function EducationList(props){
+  console.log(props);
   return (
     <div>
-      {Portfolio.educationList.map((education, index) =>
+      {Object.keys(props.educationList).map(function(educationId) {
+        let education = props.educationList[educationId];
+        console.log(education);
+        console.log(educationId);
         <Education
           institution={education.institution}
           skills={education.skillsGained}
-          key={`eduList-${index}`}
+          key={`edu-${educationId}`}
         />
-      )}
+      })}
     </div>
   );
+}
+
+EducationList.propTypes = {
+  educationList: PropTypes.object.isRequired
 }
 
 export default EducationList;
