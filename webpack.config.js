@@ -66,7 +66,7 @@ module.exports = {
           }
         }
       },
-      {
+      {// Linh Nguyen My - provided a super helpful explanation on medium (link in the README.md) -----
         test: /\.css$/,
         use: [
           {
@@ -83,7 +83,7 @@ module.exports = {
             }
           }
         ]
-      }
+      }// ---------------------------------------------------------------------------------------------
     ]
   },
 

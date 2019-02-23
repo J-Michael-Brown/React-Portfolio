@@ -42,8 +42,11 @@ For versions and a full list of dependencies, plugins, and scripts see the "devD
 
 | Dependency | Description |
 | --- | --- |
+| css-loader| compiler plugin to load css files |
+| style-loader| compiler plugin to use custom style sheets |
 | react | REACT core plugin |
 | react-router-dom | REACT web routing plugin |
+| react-toolbox | React component library (responsible for styling) |
 | babel-core | Babel compiler core |
 | babel-loaded | Babel loader for webpack |
 | babel-present-es2015 | Specifies how Babel can convert ES6 to ES5 |
@@ -81,9 +84,7 @@ SOFTWARE.
 ## Developer Notes    
 README.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
-looking into adding css loader, I think that may be my current problem
-
-found a super helpful explanation and example of css loading in webpack for react by [Linh Nguyen My](https://medium.freecodecamp.org/@pinglinh) on [mediub free code camp](https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75)
+Found a super helpful explanation and example of css loading in webpack for react by [Linh Nguyen My](https://medium.freecodecamp.org/@pinglinh) on [mediub free code camp](https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75)
 
 ## Component Structure
 
