@@ -1,12 +1,19 @@
 import React from 'react';
+import AppBar from 'react-toolbox/lib/app_bar';
+import Navigation from 'react-toolbox/lib/navigation';
+import {Button} from 'react-toolbox/lib/button';
 import { Link } from 'react-router-dom';
 
 function Header(){
   return (
-    <div>
-      <h1>J. Michael Brown</h1>
-      <Link to="/education">Education</Link> | <Link to="/projects">Projects</Link> | <Link to="/interests">Interests</Link>
-    </div>
+
+    <AppBar title="React Toolbox" leftIcon='' rightIcon=''>
+      <Navigation type="horizontal">
+        <Link to="/education"><Button label='Education' accent /></Link>
+        <Link to="/projects"><Button label='Projects' accent /></Link>
+        <Link to="/interests"><Button label='Interests' accent /></Link>
+      </Navigation>
+    </AppBar>
   );
 }
 
