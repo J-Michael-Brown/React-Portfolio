@@ -83,6 +83,8 @@ README.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
 looking into adding css loader, I think that may be my current problem
 
+found a super helpful explanation and example of css loading in webpack for react by [Linh Nguyen My](https://medium.freecodecamp.org/@pinglinh) on [mediub free code camp](https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75)
+
 ## Component Structure
 
 ![alt text](src/assets/component-tree.png)
