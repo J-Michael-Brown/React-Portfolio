@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function InterestParagraph(props){
   return (
     <div>
-      <p>{props.note}</p>
+      <p style={{marginBottom: '10px'}}>{props.note}</p>
     </div>
   );
 }

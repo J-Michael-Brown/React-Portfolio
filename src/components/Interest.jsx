@@ -27,9 +27,9 @@ class Interest extends React.Component{
       moreIndecater = '';
     }
     return (
-      <div>
-        <Button style={{fontWeight: 'bold', fontSize: '18px'}} label={this.props.regard} onClick={this.handleToggle}/>
-        <p onClick={this.handleToggle} style={{cursor: 'pointer'}}>{this.props.notes[0]+moreIndecater}</p>
+      <div style={{cursor: 'pointer'}} onClick={this.handleToggle}>
+        <Button style={{fontWeight: 'bold', fontSize: '18px'}} label={this.props.regard}/>
+        <p>{this.props.notes[0]+moreIndecater}</p>
         <Dialog
             actions={this.actions}
             active={this.state.active}
