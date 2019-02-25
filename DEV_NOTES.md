@@ -6,8 +6,6 @@
 
 ## Current Problem
 
-Can't :hover tag is not the same with in-line styling - looking to set mouse hover for `<p>` tag
+After digging through several lists of React component libraries, I've decided to try to modify the header of my website - I need a query of the router to be performed on navigation.
 
-## Visiting these Sites:
-
-* http://react-toolbox.io/#/components/
+<!-- ## Visiting these Sites: -->

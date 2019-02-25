@@ -10,7 +10,7 @@ function Header(){
     <AppBar title="React Toolbox" leftIcon='' rightIcon=''>
       <Navigation type="horizontal">
         <Link to="/education"><Button label='Education' accent /></Link>
-        <Link to="/projects"><Button label='Projects' accent /></Link>
+        <Link to="/projects"><Button label='Projects' accent raised /></Link>
         <Link to="/interests"><Button label='Interests' accent /></Link>
       </Navigation>
     </AppBar>
