@@ -1,8 +1,7 @@
-const aboutUsStyles = {
-  dd: {
-    display: 'inline',
-    margin: '50px'
+const InterestStyles = {
+  p:hover: {
+    cursor: pointer
   }
 };
 
-export { };
+export { InterestStyles };
