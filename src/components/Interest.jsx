@@ -31,20 +31,20 @@ class Interest extends React.Component{
         <Button style={{fontWeight: 'bold', fontSize: '18px'}} label={this.props.regard}/>
         <p>{this.props.notes[0]+moreIndecater}</p>
         <Dialog
-            actions={this.actions}
-            active={this.state.active}
-            onEscKeyDown={this.handleToggle}
-            onOverlayClick={this.handleToggle}
-            title={this.props.regard}
-          >
-            <div>
-              {this.props.notes.map((note) =>
-                <InterestParagraph
+          actions={this.actions}
+          active={this.state.active}
+          onEscKeyDown={this.handleToggle}
+          onOverlayClick={this.handleToggle}
+          title={this.props.regard}
+        >
+          <div>
+            {this.props.notes.map((note) =>
+              <InterestParagraph
                 note={note}
                 key={v4()}
-                />
-              )}
-            </div>
+              />
+            )}
+          </div>
         </Dialog>
       </div>
     );

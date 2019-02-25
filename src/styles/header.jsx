@@ -7,4 +7,4 @@ const par = {
   color: 'black'
 };
 
-export {par, bigHeader}
+export {par, bigHeader};

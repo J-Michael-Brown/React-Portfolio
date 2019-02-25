@@ -25,13 +25,13 @@ class Header extends React.Component{
     let interestLink = <Link to="/interests"><Button onClick={() => this.handleCurrentRoute('interests')} label='Interests' accent /></Link>;
 
     if(currentRoute=='education'){
-      eduLink = <Link to="/education"><Button onClick={() => this.handleCurrentRoute('education')} label='Education' accent raised/></Link>
+      eduLink = <Link to="/education"><Button onClick={() => this.handleCurrentRoute('education')} label='Education' accent raised/></Link>;
     }
     else if(currentRoute == 'projects'){
-      projectLink = <Link to="/projects"><Button onClick={() => this.handleCurrentRoute('projects')} label='Projects' accent raised /></Link>
+      projectLink = <Link to="/projects"><Button onClick={() => this.handleCurrentRoute('projects')} label='Projects' accent raised /></Link>;
     }
     else if(currentRoute == 'interests'){
-      interestLink = <Link to="/interests"><Button onClick={() => this.handleCurrentRoute('interests')} label='Interests' accent raised /></Link>
+      interestLink = <Link to="/interests"><Button onClick={() => this.handleCurrentRoute('interests')} label='Interests' accent raised /></Link>;
     }
 
     return (

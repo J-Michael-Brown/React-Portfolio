@@ -3,6 +3,6 @@ const bodyStyle = {
   display: 'block',
   marginLeft: 'auto',
   marginRight: 'auto'
-}
+};
 
-export { bodyStyle }
+export { bodyStyle };
