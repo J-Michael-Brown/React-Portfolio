@@ -6,6 +6,7 @@ import EducationList from './EducationList';
 import ProjectList from './ProjectList';
 import InterestListList from './InterestListList';
 import Portfolio from '../assets/portfolio.js';
+import {bodyStyle} from '../styles/body.jsx';
 /* eslint-enable */
 
 class App extends React.Component {
@@ -19,7 +20,7 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <switch>
+        <switch style={bodyStyle}>
           <Route exact path='/education' render={()=><EducationList educationList={this.state.portfolio.educationList}/>}/>
           <Route exact path='/projects' render={()=><ProjectList projectList={this.state.portfolio.projectList}/>}/>
           <Route exact path='/interests' render={()=><InterestListList interestListList={this.state.portfolio.interestListList}/>}/>
