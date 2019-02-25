@@ -4,7 +4,7 @@ import InterestParagraph from './InterestParagraph';
 import {v4} from 'uuid';
 import Dialog from 'react-toolbox/lib/dialog';
 import {Button} from 'react-toolbox/lib/button';
-import {InterestStyles} from '../css/styles';
+// import {InterestStyles} from '../css/styles';
 
 class Interest extends React.Component{
 
@@ -27,24 +27,24 @@ class Interest extends React.Component{
       moreIndecater = '';
     }
     return (
-      <div style={InterestStyles}>
-      <Button label={this.props.regard} onClick={this.handleToggle}/>
-      <p onClick={this.handleToggle}>{this.props.notes[0]+moreIndecater}</p>
-      <Dialog
-          actions={this.actions}
-          active={this.state.active}
-          onEscKeyDown={this.handleToggle}
-          onOverlayClick={this.handleToggle}
-          title={this.props.regard}
-        >
-          <div>
-            {this.props.notes.map((note) =>
-              <InterestParagraph
-              note={note}
-              key={v4()}
-              />
-            )}
-          </div>
+      <div>
+        <Button style={{fontWeight: 'bold', fontSize: '18px'}} label={this.props.regard} onClick={this.handleToggle}/>
+        <p onClick={this.handleToggle} style={{cursor: 'pointer'}}>{this.props.notes[0]+moreIndecater}</p>
+        <Dialog
+            actions={this.actions}
+            active={this.state.active}
+            onEscKeyDown={this.handleToggle}
+            onOverlayClick={this.handleToggle}
+            title={this.props.regard}
+          >
+            <div>
+              {this.props.notes.map((note) =>
+                <InterestParagraph
+                note={note}
+                key={v4()}
+                />
+              )}
+            </div>
         </Dialog>
       </div>
     );
