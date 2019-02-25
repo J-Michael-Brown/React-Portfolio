@@ -2,20 +2,36 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import InterestParagraph from './InterestParagraph';
 import {v4} from 'uuid';
-// import {educationStyles} from '../css/styles.jsx';
+import Dialog from 'react-toolbox/lib/dialog';
 
-function Interest(props){
-  return (
-    <div>
-      <h4>{props.regard}</h4>
-      {props.notes.map((note) =>
+class Interest extends React.Component{
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+      actions: [{ label: 'Done', onClick: this.handleToggle }]
+
+    };
+    this.handleToggle = this.handleToggle.bind(this);
+  }
+
+  handleToggle() {
+    this.setState({active: !this.state.active});
+  }
+  render() {
+    return (
+      <div>
+      <h4>{this.props.regard}</h4>
+      {this.props.notes.map((note) =>
         <InterestParagraph
-          note={note}
-          key={v4()}
+        note={note}
+        key={v4()}
         />
       )}
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 Interest.propTypes = {
